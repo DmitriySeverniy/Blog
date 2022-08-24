@@ -1,0 +1,331 @@
+/* Стили body и container */
+body {
+  margin: 0;
+  color: #333;
+  background: url("../images/first_bg.jpg");
+  /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
+  font-family: 'Marck Script', cursive;
+  line-height: 1.5em;
+
+  font-size: 1.1em;
+
+}
+
+#container {
+  width: 960px;
+  background: linear-gradient(to top, #9696b5, #f7f8fa);
+  margin: 20px auto;
+  padding: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* Логотип и footer */
+#logo {
+  display: block;
+  width: 300px;
+  padding: 0 660px 20px 0;
+  border: none;
+  border-bottom: 1px solid #00a0b0;
+  margin-bottom: 40px;
+}
+
+#footer {
+  border-top: 1px solid #00a0b0;
+  margin-top: 40px;
+  padding: 20px 0 0 0;
+  font-size: .8em;
+}
+
+/* Заголовки */
+h1 {
+  color: #675ea4;
+  margin-bottom: 30px;
+  line-height: 1.2em;
+}
+
+
+h2 .anime{
+  font-family: 'Marck Script', cursive;
+  padding: 1em 2em;
+  color: #888;
+  font-size: 4.5em;
+  font-weight: 800;
+
+  
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+}
+
+
+
+
+
+h2, h2 a {
+  color: #675ea4;
+}
+
+h2 a {
+  text-decoration: none;
+}
+
+h3.categoryDescription {
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+/* Заголовки статей */
+#headlines {
+  list-style: none;
+  padding-left: 0;
+  width: 75%;
+}
+
+#headlines li {
+  margin-bottom: 2em;
+  clear: both;
+}
+
+.pubDate {
+  font-size: .8em;
+  color: #ee4614;
+  text-transform: uppercase;
+}
+
+#headlines .pubDate {
+  display: block;
+  width: 100px;
+  padding-top: 4px;
+  float: left;
+  font-size: .5em;
+  vertical-align: middle;
+}
+
+#headlines.archive .pubDate {
+  width: 130px;
+}
+
+.summary {
+  padding-left: 100px;
+}
+
+#headlines.archive .summary {
+  padding-left: 130px;
+}
+
+.category {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 60%;
+  color: #999;
+  display: block;
+  line-height: 2em;
+}
+
+.category a {
+  color: #999;
+  text-decoration: underline;
+}
+
+/* "Вы вошли в систему..." заголовок на страницах администратора */
+#adminHeader {
+  width: 940px;
+  padding: 0 10px;
+  border-bottom: 1px solid #00a0b0;
+  margin: -30px 0 40px 0;
+  font-size: 0.8em;
+}
+
+/* Оформление формы: цветной фон, закругленные углы с тенью */
+form {
+  margin: 20px auto;
+  padding: 40px 20px;
+  overflow: auto;
+  background: linear-gradient(to top, #edeff3, #b9b9bd);
+  border: 1px solid #666;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+/* Придадим элементам формы одинаковые поля, отступы и высоту строки */
+form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+form ul li {
+  margin: .9em 0 0 0;
+  padding: 0;
+}
+
+form * {
+  line-height: 1em;
+}
+
+/*Метки*/
+label {
+  display: block;
+  float: left;
+  clear: left;
+  text-align: right;
+  width: 15%;
+  padding: .4em 0 0 0;
+  margin: .15em .5em 0 0;
+}
+
+/* Поля */
+input, select, textarea {
+  display: block;
+  margin: 0;
+  padding: .4em;
+  width: 80%;
+}
+
+input, textarea, .date {
+  border: 2px solid #666;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;    
+  border-radius: 5px;
+  background: #fff;
+}
+
+input {
+  font-size: .9em;
+}
+
+select {
+  padding: 0;
+  margin-bottom: 2.5em;
+  position: relative;
+  top: .7em;
+}
+
+textarea {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  height: 5em;
+  line-height: 1.5em;
+}
+
+textarea#content {
+  font-family: "Courier New", courier, fixed;
+}
+
+/* Рамка вокруг сфокусированных полей */
+form *:focus {
+  border: 2px solid #7c412b;
+  outline: none;
+}
+
+/* Отображение правильно заполненных полей на зеленом фоне */
+input:valid, textarea:valid {
+  background: #efe;
+}
+
+/* Кнопки отправки */
+.buttons {
+  text-align: center;
+  margin: 40px 0 0 0;
+}
+
+input[type="submit"] {
+  display: inline;
+  margin: 0 20px;
+  width: 12em;
+  padding: 10px;
+  border: 2px solid #7c412b;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;  
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  color: #fff;
+  background: linear-gradient(to top, #030942, #969dc7);
+  font-weight: bold;
+  -webkit-appearance: none;
+}
+
+input[type="submit"]:hover, input[type="submit"]:active {
+  cursor: pointer;
+  background: #fff;
+  color: #5059ef;
+}
+
+input[type="submit"]:active {
+  background: #eee;
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+}
+
+/* Таблица */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr, th, td {
+  padding: 10px;
+  margin: 0;
+  text-align: left;
+}
+
+table, th {
+  border: 1px solid #00a0b0;
+}
+
+th {
+  border-left: none;
+  border-right: none;
+  background: #505bef;
+  color: #fff;
+  cursor: default;
+}
+
+tr:nth-child(odd) {
+  background: #fff4cf;
+}
+
+tr:nth-child(even) {
+  background: #fff;
+}
+
+tr:hover {
+  background: #ddd;
+  cursor: pointer;
+}
+
+/* Поля состояния и ошибок */
+.statusMessage, .errorMessage {
+  font-size: .8em;
+  padding: .5em;
+  margin: 2em 0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+.statusMessage {
+  background-color: #2b2;
+  border: 1px solid #080;
+  color: #fff;
+}
+
+.errorMessage {
+  background-color: #f22;
+  border: 1px solid #800;
+  color: #fff;
+}
