@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
+    <meta charset="utf-8">
     <title><?php echo htmlspecialchars( $results['pageTitle'] )?></title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
 
-    <script src="js/script.js?v=1"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
-      rel="stylesheet"
+    
     />
-
   </head>
   <body>
     <div id="container">
