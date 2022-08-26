@@ -1,19 +1,22 @@
-/* Стили body и container */
+@font-face {
+  font-family: "Marck Script";
+  src: url("../fonts/MarckScript-Regular.ttf") format("truetype");
+}
+
 body {
   margin: 0;
   color: #333;
   background: url("../images/first_bg.jpg");
-  /*font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; */
-  font-family: 'Marck Script', cursive;
+  /*font-family: Arial, sans-serif; */
+  font-family: Marck Script;
   line-height: 1.5em;
 
   font-size: 1.1em;
-
 }
 
 #container {
   width: 960px;
-  background: linear-gradient(to top, #9696b5, #f7f8fa);
+  background: linear-gradient(to top, #9696b5, #c4ccdb);
   margin: 20px auto;
   padding: 20px;
   -moz-border-radius: 5px;
@@ -35,7 +38,7 @@ body {
   border-top: 1px solid #00a0b0;
   margin-top: 40px;
   padding: 20px 0 0 0;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 /* Заголовки */
@@ -45,27 +48,21 @@ h1 {
   line-height: 1.2em;
 }
 
-
-h2 .anime{
-  font-family: 'Marck Script', cursive;
+h2 .anime {
+  font-family: PT Sans,Arial,sans-serif;
   padding: 1em 2em;
   color: #888;
   font-size: 4.5em;
   font-weight: 800;
 
-  
   background-image: linear-gradient(to left, #553c9a, #b393d3);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-
 }
 
-
-
-
-
-h2, h2 a {
+h2,
+h2 a {
   color: #675ea4;
 }
 
@@ -91,7 +88,7 @@ h3.categoryDescription {
 }
 
 .pubDate {
-  font-size: .8em;
+  font-size: 0.8em;
   color: #ee4614;
   text-transform: uppercase;
 }
@@ -101,7 +98,7 @@ h3.categoryDescription {
   width: 100px;
   padding-top: 4px;
   float: left;
-  font-size: .5em;
+  font-size: 0.5em;
   vertical-align: middle;
 }
 
@@ -148,11 +145,11 @@ form {
   background: linear-gradient(to top, #edeff3, #b9b9bd);
   border: 1px solid #666;
   -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;  
+  -webkit-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
 }
 
 /* Придадим элементам формы одинаковые поля, отступы и высоту строки */
@@ -163,7 +160,7 @@ form ul {
 }
 
 form ul li {
-  margin: .9em 0 0 0;
+  margin: 0.9em 0 0 0;
   padding: 0;
 }
 
@@ -178,46 +175,50 @@ label {
   clear: left;
   text-align: right;
   width: 15%;
-  padding: .4em 0 0 0;
-  margin: .15em .5em 0 0;
+  padding: 0.4em 0 0 0;
+  margin: 0.15em 0.5em 0 0;
 }
 
 /* Поля */
-input, select, textarea {
+input,
+select,
+textarea {
   display: block;
   margin: 0;
-  padding: .4em;
+  padding: 0.4em;
   width: 80%;
 }
 
-input, textarea, .date {
+input,
+textarea,
+.date {
   border: 2px solid #666;
   -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;    
+  -webkit-border-radius: 5px;
   border-radius: 5px;
   background: #fff;
 }
 
 input {
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 select {
   padding: 0;
   margin-bottom: 2.5em;
   position: relative;
-  top: .7em;
+  top: 0.7em;
 }
 
 textarea {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  font-size: .9em;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 0.9em;
   height: 5em;
   line-height: 1.5em;
 }
 
 textarea#content {
-  font-family: "Courier New", courier, fixed;
+  font-family: PT Sans,Arial,sans-serif;
 }
 
 /* Рамка вокруг сфокусированных полей */
@@ -227,7 +228,8 @@ form *:focus {
 }
 
 /* Отображение правильно заполненных полей на зеленом фоне */
-input:valid, textarea:valid {
+input:valid,
+textarea:valid {
   background: #efe;
 }
 
@@ -244,18 +246,19 @@ input[type="submit"] {
   padding: 10px;
   border: 2px solid #7c412b;
   -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;  
+  -webkit-border-radius: 5px;
   border-radius: 5px;
-  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
   color: #fff;
   background: linear-gradient(to top, #030942, #969dc7);
   font-weight: bold;
   -webkit-appearance: none;
 }
 
-input[type="submit"]:hover, input[type="submit"]:active {
+input[type="submit"]:hover,
+input[type="submit"]:active {
   cursor: pointer;
   background: #fff;
   color: #5059ef;
@@ -263,9 +266,9 @@ input[type="submit"]:hover, input[type="submit"]:active {
 
 input[type="submit"]:active {
   background: #eee;
-  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
-  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
-  box-shadow: 0 0 .5em rgba(0, 0, 0, .8) inset;
+  -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset;
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8) inset;
 }
 
 /* Таблица */
@@ -274,13 +277,16 @@ table {
   border-collapse: collapse;
 }
 
-tr, th, td {
+tr,
+th,
+td {
   padding: 10px;
   margin: 0;
   text-align: left;
 }
 
-table, th {
+table,
+th {
   border: 1px solid #00a0b0;
 }
 
@@ -306,16 +312,17 @@ tr:hover {
 }
 
 /* Поля состояния и ошибок */
-.statusMessage, .errorMessage {
-  font-size: .8em;
-  padding: .5em;
+.statusMessage,
+.errorMessage {
+  font-size: 0.8em;
+  padding: 0.5em;
   margin: 2em 0;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
-  border-radius: 5px; 
-  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-  -box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
+  -box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.8);
 }
 
 .statusMessage {
